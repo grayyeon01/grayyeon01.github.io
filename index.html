@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add("js");</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FFB5D3">
+  <title>Baby</title>
+  <link rel="icon" type="image/png" href="assets/barbieletterICONNOBG.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/barbieWALLPAPERENHANCEDV2.png">
+  <link rel="preload" as="image" href="assets/envelope2revised.png">
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>.reveal{opacity:1!important;translate:none!important}</style></noscript>
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-back" viewBox="0 0 107 67">
+      <path d="M37 2 2 33.5 37 65V45h68V22H37Z" fill="#fff" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <main class="site">
+    <section class="screen is-active" id="card" data-screen="card" data-parent="" data-title="A card for you" aria-labelledby="card-title" tabindex="-1">
+      <div class="paper-card card-intro">
+        <h1 class="abs txt font-comic t50 pos-title reveal" id="card-title" style="--x:304.25;--y:117;--w:831.5">hi baby, i made this boquet for you!</h1>
+
+        <button class="abs h envelope-btn reveal" data-go="gifts" style="--x:470;--y:208.35;--w:442;--h:527.12" aria-label="Open the pink envelope">
+          <img src="assets/envelope2revised.png" alt="Pink envelope holding a folded letter" draggable="false">
+        </button>
+
+        <p class="abs txt font-comic t50 pos-prompt reveal" style="--x:377.16;--y:735.48;--w:663.69">Would you like to open it? :&gt;</p>
+
+        <div class="actions actions--intro">
+          <button class="abs h btn reveal" data-go="gifts" style="--x:459;--y:817;--w:209;--h:69">
+            <span class="btn__label" style="--lx:51;--ly:0;--lw:139;--lh:50">YES</span>
+            <img class="btn__sticker" src="assets/barbieblowkissICON.png" style="--sx:133.5;--sy:-19.5;--sw:113;--sh:108" alt="" draggable="false">
+          </button>
+          <button class="abs h btn reveal" data-go="promise" style="--x:720;--y:817;--w:221;--h:69">
+            <span class="btn__label" style="--lx:69;--ly:0;--lw:139;--lh:50">NO</span>
+            <img class="btn__sticker" src="assets/barbieNoICONNOBGV2.png" style="--sx:125;--sy:-11.52;--sw:101.5;--sh:89.75" alt="" draggable="false">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="promise" data-screen="promise" data-parent="card" data-title="A little promise" aria-labelledby="promise-title" tabindex="-1">
+      <div class="paper-card card-promise">
+        <h2 class="abs txt font-comic t50 pos-title reveal" id="promise-title" style="--x:433.35;--y:155;--w:573.3">I promise you will like it!</h2>
+
+        <img class="abs h video video--promise reveal" src="assets/music/sadderCat.gif" alt="Sad cat" style="--x:469.5;--y:243;--w:500;--h:495;--ar:325.5 / 495" draggable="false">
+        <audio class="screen-audio" src="assets/music/sadderCat.mp3" preload="auto" loop></audio>
+
+        <p class="abs txt font-comic t50 pos-prompt reveal" style="--x:413.19;--y:729;--w:613.63">Would you like to open it?</p>
+
+        <div class="actions">
+          <button class="abs h btn reveal" data-go="yey" style="--x:459;--y:817;--w:209;--h:69">
+            <span class="btn__label" style="--lx:48;--ly:0;--lw:139;--lh:50">YES!</span>
+            <img class="btn__sticker" src="assets/barbiehappyNOBG.png" style="--sx:148;--sy:-13;--sw:70.75;--sh:109.75" alt="" draggable="false">
+          </button>
+          <button class="abs h btn reveal" data-go="please" style="--x:720;--y:817;--w:221;--h:69">
+            <span class="btn__label" style="--lx:26;--ly:-1;--lw:202;--lh:70">AYAW</span>
+            <img class="btn__sticker" src="assets/barbiefyICONNOBG.png" style="--sx:175;--sy:-18;--sw:82;--sh:105" alt="" draggable="false">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="please" data-screen="please" data-parent="promise" data-title="Please?" aria-labelledby="please-title" tabindex="-1">
+      <div class="paper-card card-please">
+        <h2 class="abs txt font-comic t70 pos-title reveal" id="please-title" style="--x:498;--y:195.25;--w:422;--h:98">PLEASEEEE!</h2>
+
+        <img class="abs h video video--please reveal" src="assets/gif/cryingCat.gif" alt="Crying cat" style="--x:561.5;--y:306;--w:295;--h:434;--ar:295 / 434" draggable="false">
+        <audio class="screen-audio" src="assets/music/cryingCat.mp3" preload="auto" loop></audio>
+
+        <p class="abs txt font-comic t50 pos-prompt reveal" style="--x:403;--y:740;--w:612">Would you like to open it?</p>
+
+        <div class="actions actions--single">
+          <button class="abs h btn reveal" data-go="yey" style="--x:498;--y:819;--w:436;--h:69">
+            <span class="btn__label" style="--lx:35;--ly:-1;--lw:374;--lh:70">SIGE NA NGA!</span>
+            <img class="btn__sticker" src="assets/barbieyesICONNOBG.png" style="--sx:401.5;--sy:-18.81;--sw:69;--sh:106.63" alt="" draggable="false">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="yey" data-screen="yey" data-parent="promise" data-title="Yey" aria-labelledby="yey-title" tabindex="-1">
+      <div class="paper-card card-yey">
+        <h2 class="abs txt font-comic t70 pos-title reveal" id="yey-title" style="--x:547.05;--y:175;--w:345.9;--h:98">YEYYYYY!</h2>
+
+        <img class="abs h video video--yey reveal" src="assets/gif/mueheheCat.gif" alt="Happy cat" style="--x:465.5;--y:281.5;--w:509;--h:461;--ar:509 / 461" draggable="false">
+        <audio class="screen-audio" src="assets/music/mueheheCat.mp3" preload="auto" loop></audio>
+
+        <div class="actions actions--single">
+          <button class="abs h btn reveal" data-go="gifts" style="--x:599;--y:813;--w:265;--h:69">
+            <span class="btn__label" style="--lx:15.59;--ly:0;--lw:233.81;--lh:70">OPEN IT!</span>
+            <img class="btn__sticker" src="assets/barbieopenICONNOBG.png" style="--sx:238;--sy:-12;--sw:79;--sh:113" alt="" draggable="false">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="gifts" data-screen="gifts" data-parent="card" data-title="Your gifts" aria-labelledby="gifts-title" tabindex="-1">
+      <div class="paper-card card-gifts has-back">
+        <audio id="birthdayAudio" class="screen-audio birthday-music" src="assets/music/happy birthday.mp3" preload="auto" loop></audio>
+
+        <button class="abs h back" data-go="card" style="--x:1311;--y:22;--w:107;--h:67" aria-label="Back to the card">
+          <svg viewBox="0 0 107 67" aria-hidden="true"><use href="#icon-back"></use></svg>
+        </button>
+
+        <h2 class="abs txt font-comic t50 pos-title reveal" id="gifts-title" style="--x:463.5;--y:132;--w:513">MY GIFTS FOR YOU!</h2>
+        <p class="abs txt font-comic t50 pos-prompt reveal" style="--x:372;--y:682;--w:764.69">Click mo po to choose hehe</p>
+
+        <div class="actions gift-options">
+          <button class="abs h gift-choice reveal" data-go="gift-1" style="--x:131;--y:309;--w:380;--h:303.5" aria-label="Open the first gift">
+            <img src="assets/GIftBoxNOBG.png" alt="Pink gift box with a ribbon" draggable="false">
+          </button>
+          <button class="abs h gift-choice reveal" data-go="gift-2" style="--x:530;--y:309;--w:380;--h:303.5" aria-label="Open the second gift">
+            <img src="assets/GIftBoxNOBG.png" alt="Pink gift box with a ribbon" draggable="false">
+          </button>
+          <button class="abs h gift-choice reveal" data-go="gift-3" style="--x:921;--y:309;--w:380;--h:303.5" aria-label="Open the third gift">
+            <img src="assets/GIftBoxNOBG.png" alt="Pink gift box with a ribbon" draggable="false">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="gift-1" data-screen="gift-1" data-parent="gifts" data-title="First gift" aria-labelledby="gift-1-title" tabindex="-1">
+      <div class="paper-card card-gift">
+        <h2 class="abs txt font-comic t50 pos-title reveal" id="gift-1-title" style="--x:484.25;--y:131.5;--w:471.5">MY GIFT FOR YOU!</h2>
+
+        <button class="abs h gift-hero reveal" data-go="ascii" style="--x:448.5;--y:269;--w:543;--h:469.5" aria-label="Open the first gift">
+          <img src="assets/GIftBoxNOBG.png" alt="Pink gift box with a ribbon" draggable="false">
+        </button>
+
+        <button class="abs h click-hint txt font-comic t50" data-go="ascii" style="--x:599.75;--y:822.5;--w:240.5;--h:70" aria-label="Open the first gift">CLICK IT!</button>
+      </div>
+    </section>
+
+    <section class="screen" id="gift-2" data-screen="gift-2" data-parent="gifts" data-title="Second gift" aria-labelledby="gift-2-title" tabindex="-1">
+      <div class="paper-card card-gift">
+        <h2 class="abs txt font-comic t50 pos-title reveal" id="gift-2-title" style="--x:484.25;--y:131.5;--w:471.5">MY GIFT FOR YOU!</h2>
+
+        <button class="abs h gift-hero reveal" data-go="bouquet" style="--x:448.5;--y:269;--w:543;--h:469.5" aria-label="Open the second gift">
+          <img src="assets/GIftBoxNOBG.png" alt="Pink gift box with a ribbon" draggable="false">
+        </button>
+
+        <button class="abs h click-hint txt font-comic t50" data-go="bouquet" style="--x:599.75;--y:822.5;--w:240.5;--h:70" aria-label="Open the second gift">CLICK IT!</button>
+      </div>
+    </section>
+
+    <section class="screen" id="gift-3" data-screen="gift-3" data-parent="gifts" data-title="Third gift" aria-labelledby="gift-3-title" tabindex="-1">
+      <div class="paper-card card-gift">
+        <h2 class="abs txt font-comic t50 pos-title reveal" id="gift-3-title" style="--x:484.25;--y:131.5;--w:471.5">MY GIFT FOR YOU!</h2>
+
+        <button class="abs h gift-hero reveal" data-go="gallery" style="--x:448.5;--y:277.25;--w:543;--h:469.5" aria-label="Open the third gift">
+          <img src="assets/GIftBoxNOBG.png" alt="Pink gift box with a ribbon" draggable="false">
+        </button>
+
+        <button class="abs h click-hint txt font-comic t50" data-go="gallery" style="--x:599.75;--y:822.5;--w:240.5;--h:70" aria-label="Open the third gift">CLICK IT!</button>
+      </div>
+    </section>
+
+    <section class="screen screen--ascii" id="ascii" data-screen="ascii" data-parent="gifts" data-title="ASCII Animation" aria-label="ASCII Animation" tabindex="-1">
+      <div class="ascii-wrapper">
+        <button class="abs h back ascii-back" data-go="gifts" aria-label="Back to the gifts">
+          <svg viewBox="0 0 107 67" aria-hidden="true"><use href="#icon-back"></use></svg>
+        </button>
+
+        <audio id="asciiMusic" class="screen-audio ascii-music" src="assets/music/Mrs Magic - Strawberry Guy (Piano Version).mp3" preload="auto" loop></audio>
+        <video id="src-video" class="ascii-src-video" src="assets/music/floweranimationv4.mp4" loop muted playsinline ></video>
+        <p id="status" class="ascii-status">Loading video...</p>
+        <canvas id="ascii-canvas"></canvas>
+      </div>
+    </section>
+
+    <section class="screen" id="bouquet" data-screen="bouquet" data-parent="gifts" data-title="Happy birthday, baby" aria-labelledby="bouquet-title" tabindex="-1">
+      <div class="paper-card card-bouquet">
+        <div class="bouquet-scene">
+          <button class="abs h rot bouquet-mail reveal" data-go="collage" style="--x:353.825;--y:244.385;--w:457.59;--h:492.56;--rot:-8.48deg" aria-label="Open the letter">
+            <img src="assets/mailICON3.png" alt="Pink envelope with a letter" draggable="false">
+          </button>
+          <img class="abs h rot bouquet-flowers reveal" src="assets/boquetICON2.png" alt="A bouquet of pink flowers" style="--x:645.04;--y:203.44;--w:491.14;--h:542.1;--rot:5.54deg" draggable="false">
+        </div>
+
+        <img class="abs h rot decor bouquet-cake" src="assets/cakeICON.png" alt="" style="--x:26;--y:784.155;--w:152;--h:207;--rot:-15.01deg" draggable="false">
+
+        <h2 class="abs txt font-cg t60 pos-title reveal" id="bouquet-title" style="--x:382.75;--y:768;--w:652.5">Happy Birthday, Baby!<br> (click the card)</h2>
+      </div>
+    </section>
+
+    <section class="screen" id="collage" data-screen="collage" data-parent="bouquet" data-title="Happy birthday, baby" aria-labelledby="collage-title" tabindex="-1">
+      <div class="paper-card card-collage has-back">
+        <button class="abs h back" data-go="gifts" style="--x:1313.81;--y:16;--w:107;--h:67" aria-label="Back to the gifts">
+          <svg viewBox="0 0 107 67" aria-hidden="true"><use href="#icon-back"></use></svg>
+        </button>
+
+        <h2 class="abs txt font-bradley t60 collage-title reveal" id="collage-title" style="--x:102;--y:180;--w:889;--h:108">Happy Birthday, Baby!</h2>
+
+        <p class="abs txt font-bradley t40 collage-copy reveal" style="--x:118;--y:295;--w:1200">I am so grateful po na dumating ka sa buhay ko.<br>
+        You made my life so colorful po! I don't know how<br> can i thank you properly but i hope na masaya<br>ikaw sa birthday gift ko na ito! I have only three<br>wishes and my first wish is
+        sana maging healthy<br> ikaw palagi. My second wish naman po ay sana matupad po lahat ng wish mo. Last po na wish ko ay sana magtagal pa po tayo
+        'till the end of the world! Happy-happy birthday,super-super pretty baby ko! More birthdays to come!</p>
+
+        <!--<div class="frames-grid">
+          <figure class="abs h polaroid rot reveal" style="--x:915.38;--y:-12.91;--w:394.12;--h:689.28;--ar:394.12 / 689.28">
+            <img class="polaroid__photo" src="assets/IMG_20261116_120642_192.jpg" alt="A favorite photo of us" loading="lazy" draggable="false">
+            <img class="polaroid__frame" src="assets/singleframeICON.png" alt="" loading="lazy" draggable="false">
+            <button class="polaroid__open" type="button" aria-label="View this photo larger"></button>
+          </figure>
+          <figure class="abs h polaroid rot reveal" style="--x:917.46;--y:345.27;--w:394.12;--h:689.28;--ar:394.12 / 689.28">
+            <img class="polaroid__photo" src="assets/IMG_20261116_120535_175.png.jpg" alt="Another favorite photo of us" loading="lazy" draggable="false">
+            <img class="polaroid__frame" src="assets/singleframeICON.png" alt="" loading="lazy" draggable="false">
+            <button class="polaroid__open" type="button" aria-label="View this photo larger"></button>
+          </figure>
+        </div>-->
+        <div>
+        <img class="abs h decor gallery-childhood" src="assets/photos/childhoodNOBG.png" alt="" style="--x:1024;--y:302;--w:200;--h:200;" draggable="false">
+        <img class="abs h rot decor gallery-hat" src="assets/icon/bdayhatICON.png" alt="" style="--x:920;--y:103;--w:290;--h:290; --rot:-9deg" draggable="false">
+        <img class="abs h rot decor gallery-pinkicon" src="assets/icon/pink2ICON.png" alt="" style="--x:1120;--y:200;--w:200;--h:220;--rot:-19.41deg" draggable="false">
+        <img class="abs h rot decor gallery-balloon1" src="assets/icon/baloonICON.png" alt="" style="--x:1200;--y:365;--w:150;--h:150;--rot:8deg" draggable="false">
+        <img class="abs h rot decor gallery-star" src="assets/icon/pink3ICON.png" alt="" style="--x:960;--y:455;--w:50;--h:50;--rot:12deg" draggable="false"
+        <img class="abs h rot decor gallery-balloon" src="assets/icon/baloonICON.png" alt="" style="--x:1200;--y:365;--w:150;--h:150;--rot:8deg" draggable="false">
+        <img class="abs h rot decor gallery-balloon2" src="assets/icon/baloonICON.png" alt="" style="--x:900;--y:250;--w:150;--h:150;--rot:-8deg" draggable="false">
+        </div>
+
+        <img class="abs h rot decor collage-cake" src="assets/cakeICON.png" alt="" style="--x:26;--y:784.155;--w:152;--h:207;--rot:-15.01deg" draggable="false">
+      </div>
+    </section>
+
+    <section class="screen" id="gallery" data-screen="gallery" data-parent="gifts" data-title="My favorite pictures of you" aria-labelledby="gallery-title" tabindex="-1">
+      <div class="paper-card card-gallery has-back">
+        <button class="abs h back" data-go="gifts" style="--x:1317;--y:15;--w:107;--h:67" aria-label="Back to the gifts">
+          <svg viewBox="0 0 107 67" aria-hidden="true"><use href="#icon-back"></use></svg>
+        </button>
+
+        <h2 class="abs txt font-cg t80 outline-pink gallery-title reveal" id="gallery-title" style="--x:180;--y:90;--w:1078;--h:98">My Favorite Picture of Yours</h2>
+
+        <div class="frames-grid gallery-grid">
+          <figure class="abs h polaroid rot reveal" style="--x:156.025;--y:197.82;--w:260;--h:470;--rot:-9.2deg;--ar:271.39 / 422.35">
+            <img class="polaroid__photo" src="assets/IMG_20261116_120412_016.jpg" alt="A favorite picture of you" loading="lazy" draggable="false">
+            <img class="polaroid__frame" src="assets/singleframeICON.png" alt="" loading="lazy" draggable="false">
+            <button class="polaroid__open" type="button" aria-label="View this photo larger"></button>
+          </figure>
+          <figure class="abs h polaroid rot reveal" style="--x:643.15;--y:187.835;--w:260;--h:470;--rot:9.41deg;--ar:253.15 / 426.16">
+            <img class="polaroid__photo" src="assets/Messenger_creation_46A51D9D-6108-4626-B11A-B29B75B85765.jpeg" alt="A favorite picture of you" loading="lazy" draggable="false">
+            <img class="polaroid__frame" src="assets/singleframeICON.png" alt="" loading="lazy" draggable="false">
+            <button class="polaroid__open" type="button" aria-label="View this photo larger"></button>
+          </figure>
+          <figure class="abs h polaroid rot reveal" style="--x:1007.3;--y:189.74;--w:260;--h:470;--rot:-2.93deg;--ar:271.39 / 422.35">
+            <img class="polaroid__photo" src="assets/IMG_20261116_121321_004.jpg" alt="A favorite picture of you" loading="lazy" draggable="false">
+            <img class="polaroid__frame" src="assets/singleframeICON.png" alt="" loading="lazy" draggable="false">
+            <button class="polaroid__open" type="button" aria-label="View this photo larger"></button>
+          </figure>
+          <figure class="abs h polaroid rot reveal" style="--x:606.93;--y:427.02;--w:260;--h:470;--rot:9.6deg;--ar:249.18 / 392.72">
+            <img class="polaroid__photo" src="assets/childhood.jpeg" alt="A childhood photo" loading="lazy" draggable="false">
+            <img class="polaroid__frame" src="assets/singleframeICON.png" alt="" loading="lazy" draggable="false">
+            <button class="polaroid__open" type="button" aria-label="View this photo larger"></button>
+          </figure>
+          <figure class="abs h polaroid rot reveal" style="--x:276.735;--y:543.69;--w:260;--h:470;--rot:7.92deg;--ar:271.39 / 422.35">
+            <img class="polaroid__photo" src="assets/IMG_20261116_121108_388.jpg" alt="A favorite picture of you" loading="lazy" draggable="false">
+            <img class="polaroid__frame" src="assets/singleframeICON.png" alt="" loading="lazy" draggable="false">
+            <button class="polaroid__open" type="button" aria-label="View this photo larger"></button>
+          </figure>
+          <figure class="abs h polaroid rot reveal" style="--x:956.15;--y:539.74;--w:260;--h:470;--rot:-10.17deg;--ar:271.39 / 422.35">
+            <img class="polaroid__photo" src="assets/IMG_20261116_122216_865.jpg" alt="A favorite picture of you" loading="lazy" draggable="false">
+            <img class="polaroid__frame" src="assets/singleframeICON.png" alt="" loading="lazy" draggable="false">
+            <button class="polaroid__open" type="button" aria-label="View this photo larger"></button>
+          </figure>
+        </div>
+
+        <img class="abs h rot decor gallery-ribbon" src="assets/ribbonICON.png" alt="" style="--x:459.44;--y:395.91;--w:154.82;--h:150;--rot:-19.41deg" draggable="false">
+        <img class="abs h decor gallery-camera" src="assets/cameraICON.png" alt="" style="--x:124;--y:631.83;--w:121;--h:120" draggable="false">
+        <img class="abs h rot decor gallery-phone" src="assets/phoneICON.png" alt="" style="--x:812.975;--y:762.445;--w:170;--h:171.54;--rot:-3.97deg" draggable="false">
+        <img class="abs h decor gallery-logo" src="assets/barbieletterICONNOBG.png" alt="" style="--x:1270;--y:879;--w:116;--h:68" draggable="false">
+        <img class="abs h decor gallery-clip" src="assets/pinICON.png" alt="" style="--y:794.14;--x:557;--w:67.27;--h:87.24" draggable="false">
+        <img class="abs h decor gallery-button" src="assets/icon/buttonICON.png" alt="" style="--y:423.75;--x:916.67;--w:80;--h:80" draggable="false">
+        <img class="abs h decor gallery-flower" src="assets/icon/flowerICON2.png" alt="" style="--y:-15;--x:-34.69;--w:220;--h:210" draggable="false">
+      </div>
+    </section>
+  </main>
+
+  <dialog class="video-modal" id="videoModal" aria-labelledby="videoModalTitle">
+    <div class="video-modal__inner">
+      <button class="video-modal__close" type="button" aria-label="Close video">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h2 class="video-modal__title" id="videoModalTitle">Play with sound</h2>
+      <video id="modalVideo" controls playsinline preload="metadata"></video>
+    </div>
+  </dialog>
+
+  <dialog class="photo-modal" id="photoModal" aria-label="Photo">
+    <button class="photo-modal__close" type="button" aria-label="Close photo">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <img id="photoModalImage" src="" alt="">
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
