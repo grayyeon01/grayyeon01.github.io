@@ -107,7 +107,16 @@
         asciiStatus.hidden = true;
       }
 
-      const aspectRatio = asciiVideo.videoHeight / asciiVideo.videoWidth;
+      const vw = asciiVideo.videoWidth;
+      const vh = asciiVideo.videoHeight;
+      // Portrait phones: the landscape video leaves big black bars and the flower looks tiny.
+      // Center-crop ~78% of the width so the flower fills more of the screen.
+      const portrait = window.innerHeight > window.innerWidth;
+      const cropW = portrait ? vw * 0.78 : vw;
+      const cropH = vh;
+      const sx = (vw - cropW) / 2;
+      const sy = 0;
+      const aspectRatio = cropH / cropW;
       const height = Math.floor(asciiWidth * aspectRatio * 0.55);
 
       if (asciiSampleCanvas.width !== asciiWidth || asciiSampleCanvas.height !== height) {
@@ -118,7 +127,7 @@
       }
 
       try {
-        asciiSampleCtx.drawImage(asciiVideo, 0, 0, asciiWidth, height);
+        asciiSampleCtx.drawImage(asciiVideo, sx, sy, cropW, cropH, 0, 0, asciiWidth, height);
         const pixels = asciiSampleCtx.getImageData(0, 0, asciiWidth, height).data;
 
         asciiOutCtx.fillStyle = "#0a0a0c";
